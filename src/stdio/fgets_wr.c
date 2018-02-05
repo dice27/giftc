@@ -1,4 +1,4 @@
-#include <string.h>
+#include <stdio.h>
 #include <errno.h>
 
 #define E_SUCCESS    (0)         /* Success */
