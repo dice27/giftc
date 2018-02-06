@@ -34,7 +34,7 @@ strtod_wr(const char* nptr,
         }
     }
     else {
-        return E_FATAL;
+        return (E_FATAL);
     }
 
     if (tmpend == nptr) {

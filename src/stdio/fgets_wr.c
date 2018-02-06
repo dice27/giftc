@@ -6,11 +6,10 @@
 #define E_BADMSG     (EBADMSG)   /* Not a data message */
 
 
-char*
+int
 fgets_wr (char *s,
           int size,
-          FILE *stream
-          char *dest)
+          FILE *stream)
 {
     char* ret = NULL;
     size_t len = 0;
@@ -35,7 +34,6 @@ fgets_wr (char *s,
         --len;
         if (s[len] == '\n') {
             s[len] = '\0';
-            memcpy(dest, tmp, size);
         }
     }
 
